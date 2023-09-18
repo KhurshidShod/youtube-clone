@@ -1,0 +1,80 @@
+@use "../../assets/scss/variables" as *;
+.sidebar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: $sidebar;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 11px;
+  font-family: "Roboto";
+  .tab {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    &.active {
+      background-color: var(--bgColor-grey);
+      font-weight: 700;
+    }
+    &:hover {
+      background-color: var(--bgColor-grey);
+    }
+    span {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .dot {
+      flex-grow: 1;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding-right: 5px;
+      span {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #065fd4;
+      }
+    }
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__pages {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  &__sections {
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--sidebar-borderColor);
+  }
+  &__subscriptions {
+    margin-top: 12px;
+    padding-top: 12px;
+    p {
+      padding-left: 12px;
+      padding-bottom: 12px;
+    }
+    padding-left: 15px;
+    padding-right: 17px;
+    &_subscription {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
