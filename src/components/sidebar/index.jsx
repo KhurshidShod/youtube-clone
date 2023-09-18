@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 import styles from "./Sidebar.module.scss";
 import Sub1 from "../../assets/images/subscriptions/image 1.png";
 import Sub2 from "../../assets/images/subscriptions/image 2.png";
@@ -7,12 +7,12 @@ import Sub4 from "../../assets/images/subscriptions/image 4.png";
 import Sub5 from "../../assets/images/subscriptions/image 5.png";
 
 const Sidebar = () => {
-  axios("https://yt-api.p.rapidapi.com/home", {
-    headers: {
-      "X-RapidAPI-Key": "4e752672a7msh8fe9e438d57ed12p17dcebjsn44a8703a14a0",
-      "X-RapidAPI-Host": "yt-api.p.rapidapi.com",
-    },
-  }).then((res) => console.log(res.data.data));
+  // axios("https://yt-api.p.rapidapi.com/home", {
+  //   headers: {
+  //     "X-RapidAPI-Key": "5adc435944msh856ff48edd95ae6p15632ajsnb6fbee464e33",
+  //     "X-RapidAPI-Host": "yt-api.p.rapidapi.com",
+  //   },
+  // }).then((res) => console.log(res.data.data));
   return (
     <aside className={styles.sidebar}>
       <div className={styles.sidebar__pages}>

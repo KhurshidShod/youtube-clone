@@ -1,13 +1,13 @@
-@use "../../assets/scss/variables" as *;
 .sidebar {
   position: fixed;
   top: 56px;
   left: 0;
-  width: $sidebar;
+  width: var(--sidebar-width);
   height: 100vh;
   overflow: hidden;
   padding-top: 11px;
   font-family: "Roboto";
+  padding-right: 1rem;
   .tab {
     width: 100%;
     min-height: 40px;

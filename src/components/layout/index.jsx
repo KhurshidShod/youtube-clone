@@ -9,7 +9,9 @@ const Layout = () => {
       <Header />
       <Sidebar />
       <main>
-        <Outlet />
+        <div className="main_container">
+          <Outlet />
+        </div>
       </main>
     </React.Fragment>
   );
