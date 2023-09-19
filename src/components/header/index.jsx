@@ -12,7 +12,7 @@ const Header = () => {
     <header>
       <nav className={styles.nav}>
         <div className={styles.nav__left}>
-          <div className={styles.nav__left_toggle}>
+          <div className={styles.nav__left_toggle} onClick={() => document.body.classList.toggle('sidebarOpen')}>
             {/* <LiaBarsSolid size={25} /> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"

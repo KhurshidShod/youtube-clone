@@ -5,7 +5,16 @@
   margin-right: 8px;
   margin-bottom: 40px;
   min-width: 250px;
-  flex-grow: 0.5;
+  flex-grow: .5;
+  max-width: 450px;
+  cursor: pointer;
+  &:hover{
+    &__thumbnail{
+      img{
+        border-radius: 0px !important;
+      }
+    }
+  }
   @media (max-width: 600px) {
     width: calc(100% / var(--video-count));
     border-radius: 0;
@@ -30,9 +39,9 @@
     justify-content: start;
     align-items: start;
     @media (max-width: 600px) {
-        padding-left: 8px;
-        padding-right: 8px;
-      }
+      padding-left: 8px;
+      padding-right: 8px;
+    }
     &_poster {
       width: 36px;
       height: 36px;

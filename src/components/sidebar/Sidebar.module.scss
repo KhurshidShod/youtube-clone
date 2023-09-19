@@ -7,7 +7,13 @@
   overflow: hidden;
   padding-top: 11px;
   font-family: "Roboto";
-  padding-right: 1rem;
+  padding-right: var(--sidebar-padding);
+  transition: .1s linear;
+  z-index: 9;
+  background-color: white;
+  @media (max-width: 1150px) {
+    overflow: hidden;
+  }
   .tab {
     width: 100%;
     min-height: 40px;
@@ -71,6 +77,7 @@
     }
     padding-left: 15px;
     padding-right: 17px;
+    padding: var(--subs-padding);
     &_subscription {
       display: flex;
       justify-content: center;
