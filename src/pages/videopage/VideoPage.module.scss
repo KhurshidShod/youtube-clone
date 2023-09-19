@@ -1,0 +1,26 @@
+
+.video__page {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  background-color: red;
+  height: calc(100vh - 56px);
+  position: fixed;
+  top: 56px;
+  left: 0;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-top: 1.5rem;
+  overflow: auto;
+  &_left{
+    width: 70%;
+    height: 100px;
+    background-color: green;
+  }
+  &_right{
+    width: 30%;
+    height: 100px;
+    background-color: blue;
+  }
+}
